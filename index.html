@@ -9,37 +9,37 @@
       padding: 0;
       height: 100%;
       overflow: hidden;
-      background: white;
+      background: #fdfdfd; /* softer than pure white for contrast */
     }
 
     .orb {
       position: absolute;
       border-radius: 50%;
-      filter: blur(150px);
-      opacity: 0.25;
-      width: 60vw;
-      height: 60vw;
+      filter: blur(100px);
+      opacity: 0.3;
+      width: 40vw;
+      height: 40vw;
       mix-blend-mode: screen;
     }
 
     .orb1 {
-      background: rgba(233, 44, 180, 1);
-      animation: move1 30s ease-in-out infinite alternate;
+      background: rgba(233, 44, 180, 1); /* pink */
+      animation: move1 25s ease-in-out infinite alternate;
     }
 
     .orb2 {
-      background: rgba(48, 255, 62, 1);
-      animation: move2 40s ease-in-out infinite alternate;
+      background: rgba(48, 255, 62, 1); /* green */
+      animation: move2 35s ease-in-out infinite alternate;
     }
 
     @keyframes move1 {
-      0% { top: 10%; left: 5%; }
-      100% { top: 40%; left: 70%; }
+      0% { top: 5%; left: 10%; }
+      100% { top: 50%; left: 60%; }
     }
 
     @keyframes move2 {
       0% { top: 60%; left: 80%; }
-      100% { top: 20%; left: 10%; }
+      100% { top: 20%; left: 20%; }
     }
   </style>
 </head>
